@@ -9,7 +9,7 @@ LOCAL_SRC_FILES := wseemann_media_MediaDataSource.cpp \
 	mediametadataretriever.cpp \
         ffmpeg_mediametadataretriever.c \
         ffmpeg_utils.c
-LOCAL_SHARED_LIBRARIES := libswscale libavcodec libavformat libavutil
+LOCAL_STATIC_LIBRARIES := libswscale libavcodec libavformat libavutil
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../ffmpeg/ffmpeg/$(TARGET_ARCH_ABI)/include
 LOCAL_LDLIBS := -llog
 LOCAL_LDLIBS += -landroid
